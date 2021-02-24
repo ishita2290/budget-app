@@ -1,18 +1,20 @@
 import React,{useContext} from 'react'
 import {GlobalContext} from "../Context/Global"
+import "./IncomeTransaction.css"
 
 function IncomeTransaction({incomeTransaction}) {
     const { deleteTransaction } = useContext(GlobalContext);
-    console.log(incomeTransaction)
+   
     return (
-        
-            <li>
+      
+            <li className="incomes">
                  
-                   <span className="desc">{incomeTransaction.incomeDesc}</span>
-                   <span className="amount">{incomeTransaction.incomeAmount}</span>
+                   <span className="in-desc text-primary">{incomeTransaction.incomeDesc}</span>
+                   <span className="in-amount text-success"><span className="text-dark">€</span>{incomeTransaction.incomeAmount}</span>
        
-                   <button onClick={()=>deleteTransaction(incomeTransaction.id)} className="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                   <button onClick={()=>deleteTransaction(incomeTransaction.id)} className="delete-btn text-danger"><i class="fas fa-trash-alt"></i></button>
                 </li>
+     
     
     )
 }

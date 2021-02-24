@@ -1,0 +1,77 @@
+.input-group{
+    width:80%;
+}
+
+.income-input{
+    position:absolute;
+    top:62%;
+    
+}
+.desc,.amount{
+    width: 35%;
+    
+    margin:5px;
+    border:none;
+    /* background: transparent; */
+    background-color:wheat
+}
+.desc{
+   
+
+}
+.submit{
+   padding:5px;
+ min-width:50px;
+ height:28px;
+   font-size:15px;
+   margin-top:5px;
+   border:none;
+   /* background: transparent; */
+   background-color:rgb(143, 111, 140);
+   color:blue;
+}
+.expense-input{
+    position:absolute;
+    top:86%;
+}
+@media screen and (min-width:526px){
+    .input-group{
+        width:36%;
+       
+    }
+    .income-input{
+        position: absolute;
+        left:12%;
+        top:70%;
+        
+    }
+    .desc,.amount{
+        width:45%;
+    }
+    .submit{
+        width:45%;
+        position:absolute;
+        top:100%;
+        left:17%;
+    }
+
+.expense-input{
+    position: absolute;
+    left:55%;
+    top:70%;
+}
+
+}
+@media screen and (min-width:1024){
+    .income-input{
+        position: relative;
+    }
+}
+@media only screen and (min-width:1038px){
+.income-input{
+top:85%;
+}
+.expense-input{
+    top:85%;
+}
+}

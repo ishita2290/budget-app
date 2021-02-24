@@ -1,6 +1,46 @@
 .income-list{
-    height:200px;
-    width:500px;
-    background-color: aquamarine;
+    height:100px;
+   width:80%;
+    
     color:black;
+    position: absolute;
+    top:37%;
+    
+}
+.income-list h1{
+    font-size: 15px;
+    text-align: center;
+    color:blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+.income-transaction-list{
+    position: absolute;
+    top:20%;
+    left:10%;
+}
+
+@media screen and (min-width:526px){
+    .income-list{
+        height:100px;
+       width:50%;
+        
+        color:black;
+        position: absolute;
+        top:40%;
+        
+    }
+
+
+
+    .income-list h1{
+        position: absolute;
+        top:5%;
+        left:17%;
+    }
+
+    .income-transaction-list{
+        position: absolute;
+        top:50%;
+    }
 }

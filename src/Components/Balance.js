@@ -1,5 +1,6 @@
 import React,{useContext} from 'react'
 import {GlobalContext} from "../Context/Global"
+import "./Balance.css"
 
 function Balance() {
     const { incomeTransactions, expenseTransactions } = useContext(GlobalContext);
@@ -21,19 +22,22 @@ function Balance() {
         .toFixed(2);
     return (
         <div className="balance">
+            <div className="balancesection">
+                <div className="total-balance text-primary">
             <h2>Your Balance</h2>
-            <h3>€{(totalIncome - totalExpenses).toFixed(2)}</h3>
+            <h3><span className="text-dark">€</span>{(totalIncome - totalExpenses).toFixed(2)}</h3>
+            </div>
             <div className="income-expense">
-                <div className="income">
-                    <h3>Income</h3>
-                    <h4>€{totalIncome}</h4>
+                <div className="income text-success">
+                    <h3 >Income</h3>
+                    <h4><span className="text-dark">€</span>{totalIncome}</h4>
                 </div>
-                <div className="expense">
+                <div className="expense text-danger">
                 <h3>Expense</h3>
-                    <h4>€{totalExpenses}</h4>
+                    <h4><span className="text-dark">€</span>{totalExpenses}</h4>
                 </div>
             </div>
-            
+            </div>
         </div>
     )
 }

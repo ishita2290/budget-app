@@ -5,13 +5,16 @@ import TransactionForm from './Components/TransactionForm'
 import ExpenseList from './Components/ExpenseList'
 import IncomeList from './Components/IncomeList'
 import {GlobalProvider} from "./Context/Global"
+import BudgetImg from "./images/budget.jpeg"
+import "./App.css"
 
 function App() {
   return (
     <GlobalProvider >
     <div className="container">
      <div className="app">
-      <Header />
+       <img className="imgbudget" src={BudgetImg} alt="" />
+      {/* <Header /> */}
       <Balance />
       <IncomeList />
       <TransactionForm />

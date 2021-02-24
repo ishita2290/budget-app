@@ -1,6 +1,7 @@
 import React, { useState,useContext } from "react";
 import {v4 as uuidv4} from "uuid"
 import {GlobalContext} from "../Context/Global"
+import "./TransactionForm.css"
 
 function TransactionForm() {
 
@@ -74,30 +75,32 @@ function TransactionForm() {
         <div className="input-group income-input">
           <input
             type="text"
+            className="desc rounded"
             name="incomeDesc"
             value={incomeDesc}
-            placeholder="Add Income Description"
+            placeholder="Add Income Text"
             autoComplete="off"
             onChange={handleIncomeChange}
           />
-          <input type="number"className="amount" name="incomeAmount" value={incomeAmount} placeholder="Add Amount" autoComplete="off" onChange={handleIncomeChange}/>
+          <input type="number"className="amount rounded" name="incomeAmount" value={incomeAmount} placeholder="Add Amount" autoComplete="off" onChange={handleIncomeChange}/>
          
-          <input type="submit" value="Submit" />
+          <input className="submit rounded" type="submit" value="Submit" />
         </div>
         </form>
         <form onSubmit={submitExpense}>
         <div className="input-group expense-input">
           <input
             type="text"
+            className="desc rounded"
             name="expenseDesc"
             value={expenseDesc}
-            placeholder="Add Expense Description"
+            placeholder="Add Expense Text"
             autoComplete="off"
             onChange={handleExpenseChange}
           />
-          <input type="number" name="expenseAmount" placeholder="Add Amount" value={expenseAmount} autoComplete="off"   onChange={handleExpenseChange} />
+          <input type="number" className="amount rounded" name="expenseAmount" placeholder="Add Amount" value={expenseAmount} autoComplete="off"   onChange={handleExpenseChange} />
          
-          <input type="submit" value="Submit" />
+          <input className="submit rounded" type="submit" value="Submit" />
         </div>
       </form>
     </div>

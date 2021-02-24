@@ -1,0 +1,73 @@
+.balance{
+    height:120px;
+    width:300px;
+    /* background-color: lightgray; */
+    border-radius:20px;
+    margin:20px;
+    opacity:0.7;
+    
+    position: absolute;
+    top:15%;
+
+}
+.balancesection{
+    padding:20px 10px 10px 10px;
+  
+}
+.total-balance{
+    text-align: center;
+
+}
+.total-balance h2,h3{
+    font-size: 15px;
+}
+
+.income-expense{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+.income-expense h3,h4{
+    font-size:13px;
+}
+@media screen and (min-width:526px){
+    .balance{
+        position: absolute;
+        top:20%;
+        left:30%;
+  
+    }
+    .total-balance h2,h3{
+        font-size: 20px;
+    }
+    .income{
+        margin-right:20px;
+    }
+    .income-expense h3,h4{
+        font-size:18px;
+    }
+   
+}
+@media  screen and (min-width : 1024px){
+    .balancesection{
+        position:relative;
+        top:-40%;
+        left:20%;
+    }
+}
+@media only screen and (min-width:1038px){
+    .balancesection{
+        position:relative;
+        top:-20%;
+        left:20%;
+    }
+    .total-balance h2,h3{
+        font-size: 15px;
+    }
+   
+    .income-expense h3,h4{
+        font-size:12px;
+    }
+   
+}

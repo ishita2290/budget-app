@@ -1,0 +1,59 @@
+html,body{
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+
+}
+/* html{
+    height:100%;
+} */
+
+
+.container{
+    background:linear-gradient(to left, #74ebd5, #acb6e5);
+    height:100vh;
+ 
+    
+}
+
+.imgbudget{
+    animation: rotation 8s infinite linear;
+    mix-blend-mode: multiply;
+    
+   
+}
+
+@keyframes rotation {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(359deg)
+    }
+}
+
+@media screen and (min-width:526px){
+   
+   .container{
+       width:100%;
+   }
+   
+    .imgbudget{
+       position: absolute;
+       top:5%;
+       left:30%;
+        
+       
+    }
+}
+@media only screen and (min-width:1038px){
+   
+    .imgbudget{
+        position: absolute;
+        top:0%;
+        left:35%;
+         
+        
+     }
+}

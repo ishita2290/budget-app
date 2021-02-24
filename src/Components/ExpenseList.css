@@ -1,0 +1,61 @@
+.expense-list{
+    height:100px;
+   width:80%;
+    
+    color:black;
+    position: absolute;
+    top:70%;
+}
+
+.expense-list h1{
+    font-size: 15px;
+    text-align: center;
+    color:blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+.expense-transaction-list{
+    position: absolute;
+    top:20%;
+    left:10%;
+}
+
+@media screen and (min-width:526px){
+    .expense-list{
+        
+         position: absolute;
+         top:55%;
+         left:8%;
+     }
+    
+    .expense-list h1{
+        position: absolute;
+       top:-147%;
+        left:65%;
+    }
+
+    .expense-transaction-list{
+        position: absolute;
+        top:-100%;
+        left:62%;
+    }
+}
+@media screen and (min-width:1024px){
+    .expense-list{
+        position:relative;
+        left:15%;
+    }
+}
+@media screen and (min-width:1038px){
+    .expense-list h1 {
+        position: absolute;
+        top:260%;
+        left:65%;
+    }
+    .expense-transaction-list{
+        position: absolute;
+        top:300%;
+        left:62%;
+    }
+
+}

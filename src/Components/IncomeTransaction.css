@@ -1,0 +1,24 @@
+.incomes{
+    display: block;
+    margin: 10px 15px 5px 15px;
+    text-decoration: none;
+    /* list-style-type: disc; */
+
+    text-align: center;
+    background-color: rgb(138, 235, 138);
+    border-radius: 20px;
+}
+.in-desc{
+    margin:10px;
+    margin-right:15px;
+   
+}
+.in-amount{
+    margin-right:50px;
+}
+.delete-btn{
+    background: transparent;
+    border:none;
+    cursor: pointer;
+    
+}
